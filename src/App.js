@@ -1,11 +1,9 @@
-import DemoApp from "./CalendarFunc";
-import Calendar from "./components/Calendar";
+import Calendar from "./CalendarFunc";
 
 function App() {
   return (
     <div className="App">
-      {/* <Calendar /> */}
-      <DemoApp />
+      <Calendar />
     </div>
   );
 }
