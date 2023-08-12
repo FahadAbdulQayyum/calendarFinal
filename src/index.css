@@ -1,11 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
 html,
 body,
-body > div { /* the react root */
+body > div {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -26,7 +21,7 @@ li {
   padding: 0;
 }
 
-b { /* used for event dates/times */
+b { 
   margin-right: 3px;
 }
 
@@ -40,8 +35,9 @@ b { /* used for event dates/times */
 .demo-app-sidebar {
   width: 300px;
   line-height: 1.5;
-  background: #eaf9ff;
-  border-right: 1px solid #d3e2e8;
+  background: #1a252f20;
+  border-right: 1px solid #1a252f10;
+  box-shadow: 1px 1px 10px 1px #1a252f10;
 }
 
 .demo-app-sidebar-section {
@@ -91,7 +87,7 @@ b { /* used for event dates/times */
 }
 .absolute span:hover{
   transform: scale(1.5);
-  padding: 2px 8px;
+  padding: 8px 10px;
 }
 .absolute input,
 .absolute select,
@@ -101,6 +97,8 @@ b { /* used for event dates/times */
   margin: 5px;
   border: 1px solid lightgray;
   border-radius: 10px;
+  outline: none;
+
 }
 
 .absolute button {
@@ -110,5 +108,6 @@ b { /* used for event dates/times */
 }
 
 .absolute button:hover {
+  cursor: pointer;
   transform: scale(1.04);
 }
