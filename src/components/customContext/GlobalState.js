@@ -1,6 +1,7 @@
 import GlobalReducer from './GlobalReducer';
 import GlobalContext from './GlobalContext';
 import { useReducer, useState } from 'react';
+import { ADD_DATA, SET_FUN } from '../types';
 
 const GlobalState = props => {
 
@@ -15,10 +16,10 @@ const GlobalState = props => {
     const [state, dispatch] = useReducer(GlobalReducer, initialState);
 
     const addData = (data) => {
-        dispatch({ type: 'ADD_DATA', payload: data })
+        dispatch({ type: ADD_DATA, payload: data })
     }
     const setFun = () => {
-        dispatch({ type: 'SET_FUN' })
+        dispatch({ type: SET_FUN })
     }
     return <GlobalContext.Provider
         value={{

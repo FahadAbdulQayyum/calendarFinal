@@ -1,12 +1,14 @@
+import { ADD_DATA, SET_FUN } from "../types";
+
 const GlobalReducer = (state, action) => {
     switch(action.type) {
-        case 'ADD_DATA': {
+        case ADD_DATA: {
             return {
                 data: [...state.data,...action.payload],
                 fun: true
             }
         }
-        case 'SET_FUN': {
+        case SET_FUN: {
             return {
                 data: [],
                 fun: false

@@ -13,7 +13,6 @@ export const StyleWrapper = styled.div`
     .fc-day-today a {
       background-color: grey;
       color:white;
-      border-radius:50px;
   }
     .fc-day-today {
     background:transparent !important;
@@ -28,7 +27,7 @@ export const StyleWrapper = styled.div`
   }
 `;
 
-const DemoApp = () => {
+const CalendarFunc = () => {
 
   const [currentEvents, setCurrentEvents] = useState([]);
 
@@ -138,4 +137,4 @@ const DemoApp = () => {
   )
 }
 
-export default DemoApp;
+export default CalendarFunc;
