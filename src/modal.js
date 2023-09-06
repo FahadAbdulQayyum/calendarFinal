@@ -3,6 +3,7 @@ import React, { useContext, useState, Fragment } from 'react'
 // GlobalContext file imported from GlobalContext file
 import GlobalContext from './components/customContext/GlobalContext'
 
+// Modal function starts here
 const Modal = () => {
     const { addData, setModalShow, info } = useContext(GlobalContext);
     const [title, setTitle] = useState()
