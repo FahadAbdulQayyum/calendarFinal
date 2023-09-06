@@ -7,6 +7,7 @@ import GlobalContext from './components/customContext/GlobalContext'
 const Modal = () => {
     // Using useContext library, the GlobalContext is imported and the addData, setModalShow and info is destructured.
     const { addData, setModalShow, info } = useContext(GlobalContext);
+    // This is useState for title and setTitle
     const [title, setTitle] = useState()
     const [color, setColor] = useState()
 
