@@ -9,6 +9,7 @@ const Modal = () => {
     const { addData, setModalShow, info } = useContext(GlobalContext);
     // This is useState for title and setTitle
     const [title, setTitle] = useState()
+    // This is useState for color and setColor
     const [color, setColor] = useState()
 
     const dataFunc = e => {
