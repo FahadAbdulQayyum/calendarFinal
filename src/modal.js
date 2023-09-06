@@ -1,5 +1,6 @@
 React, useContext, useState and Fragment imported from react.
 import React, { useContext, useState, Fragment } from 'react'
+// GlobalContext file imported from GlobalContext file
 import GlobalContext from './components/customContext/GlobalContext'
 
 const Modal = () => {
