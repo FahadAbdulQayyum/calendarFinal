@@ -1,3 +1,4 @@
+React, useContext, useState and Fragment imported from react.
 import React, { useContext, useState, Fragment } from 'react'
 import GlobalContext from './components/customContext/GlobalContext'
 
